@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOW - Membership</title>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">FLOW</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="side-bg"></div>
+        
+        <div class="content">
+            <form class="membership-form">
+                <div class="form-group">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="address">
+                </div>
+                
+                <div class="form-group">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="zip">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required pattern="\d{10}" 
+                           title="Please enter a 10-digit phone number">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <h3 class="plan-header">Select Plan</h3>
+                
+                <div class="plan-options">
+                    <div class="plan-box">
+                        <div class="plan-name">Basic</div>
+                        <p>Access to basic facilities</p>
+                        <p>5 classes/month</p>
+                        <p>$29/month</p>
+                    </div>
+                    
+                    <div class="plan-box">
+                        <div class="plan-name">Standard</div>
+                        <p>Full facility access</p>
+                        <p>10 classes/month</p>
+                        <p>$49/month</p>
+                    </div>
+                    
+                    <div class="plan-box">
+                        <div class="plan-name">Premium</div>
+                        <p>VIP access</p>
+                        <p>Unlimited classes</p>
+                        <p>$79/month</p>
+                    </div>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Check this box if you want to sign up for our newsletter</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+        
+        <div class="side-bg"></div>
+    </div>
+
+    <footer>
+        <p>Contact Us</p>
+        <p>123 Main Street, Anytown</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: flow@gmail.com</p>
+    </footer>
+</body>
+</html>

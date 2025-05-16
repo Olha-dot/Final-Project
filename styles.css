@@ -1,0 +1,270 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Cool font for "FLOW" */
+.logo {
+    font-family: 'Audiowide', cursive;
+    font-size: 2.5rem;
+    color: #4a6fa5;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Responsive Navbar */
+nav {
+    background-color: #4a6fa5;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #3a5a8a;
+    transform: translateY(-2px);
+}
+
+/* Main content area */
+.main-content {
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    min-height: 100vh;
+}
+
+.side-bg {
+    background-image: url('https://www.shutterstock.com/image-vector/classic-ballet-graceful-ballerina-gentle-600nw-2158121523.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+.content {
+    background-color: white;
+    padding: 2rem;
+}
+
+/* About Us Page */
+#map {
+    height: 400px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* Classes Page */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 1rem auto 2rem auto;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.mySlides img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dot-container {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.dot:hover, .dot.active {
+    background-color: #4a6fa5;
+}
+
+/* Class boxes layout */
+.class-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.class-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.class-box {
+    flex: 1;
+    min-width: calc(50% - 0.75rem);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.class-name {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Membership Page */
+.membership-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.plan-header {
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin: 2rem 0 1rem 0;
+}
+
+.plan-options {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.plan-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    cursor: pointer;
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.plan-box.selected {
+    border: 2px solid red;
+}
+
+.plan-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.checkbox-group {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.button, .submit-btn {
+    display: block;
+    width: 200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover, .submit-btn:hover {
+    background-color: #3a5a8a;
+}
+
+/* Footer */
+footer {
+    background-color: #5b7fb4;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p:first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .side-bg {
+        display: none;
+    }
+    
+    .class-row {
+        flex-direction: column;
+    }
+    
+    .class-box {
+        width: 100%;
+    }
+}
